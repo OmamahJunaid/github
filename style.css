@@ -1,0 +1,36 @@
+#menu{
+    background-image: url("/IMG/Untitled\ design\ \(40\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: 50%;
+  
+    
+}
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: none;
+    opacity: 0.6;
+  }
+  .cartDesign{
+    background-image: url("/IMG/Untitled\ design\ \(31\).png");
+  }
+  input{
+    background-color: #FBF1EE;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin-top: 10px;
+  }
+  textarea{
+    background-color: #FBF1EE;
+    margin-top: 10px;
+  }
+  input[type=file]::file-selector-button {
+    background-color:#ecb8d0; 
+    margin-bottom: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+  text-align: center;}

@@ -1,15 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SHOOGAREE</title>
+    <link rel="shortcut icon" href="/IMG/Untitled design (23).png" type="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+  </head>
+  <body >
+<!-- Section 1 -->
+<!-- NavBar -->
+<section >
+    <nav class="navbar navbar-expand-lg  border-bottom-dark " style="background-color: #F56FAC;">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5 me-1" href="#"><img src="/IMG/Untitled design (23).png" width="60" height="50" alt=""></a>
+          <a class="navbar-brand  me-5" href="#"><img src="/IMG/logoS.png" width="120" height="40" alt=""></a>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              
+                <li class="nav-item ">
+                    <a class="nav-link k fw-medium  " href="/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: yellow;">
+                      HOME
+                    </a>
+         
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link k fw-medium  " href="#menu"   style="color: yellow;" >
+                     MENU
+                    </a>
+                  
+                  </li>
+              
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link  fw-medium" href="#Reviews"  style="color: yellow;">
+                      REVIEWS
+                    </a>
+                 
+                  </li>
+              
+             
+            
+            </ul>
+           
+            
+            <a href="#Section5" type="button" class="btn rounded-pill fw-medium  text-center p-2 m-1" style="background-color:white;"> &nbsp;&nbsp; Order Now &nbsp; &nbsp;</a> 
+          </div>
+        </div>
+      </nav> 
+</section>
+<!-- Section 2 -->
+<main style="background-color:#FBF1EE;;">
+  <section class="container ">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 style="color:#FA8DA2; font-family: 'Assistant', sans-serif;
+            font-family: 'Borel', cursive;
+            font-family: 'Noto Nastaliq Urdu', serif;
+            font-family: 'Poiret One', cursive;
+            font-family: 'Roboto Slab', serif; font-size: 80px;"> <br>
+                SHOOGAREE</h1>
+                <h4 class="text-secondary mt-2">
+                  We understand the importance of every celebration and the role our treats play in making those moments special. That's why we pour our hearts into each cake, pastry, and confection, ensuring that every bite is a journey into a world of taste and texture.
+
+                </h4>
+               
+                <a href="#Section5" class="btn rounded-pill fw-medium text-white text-center p-2 mt-4 mb-5" > &nbsp;&nbsp; Order Now &nbsp; &nbsp;</a>
+         
+
+        </div>
+        <div class="d-flex justify-content-center col-md-6 "> <img src="/IMG/Untitled design (38).png"width="550" height="550" alt=""></div>
+    </div>
+
+</section>
+</main>
+<!-- Section 3 -->
+<!-- GALLERY -->
+<section>
+
+ 
+  <h1 style="color:#F56FAC;; font-family: 'Assistant', sans-serif;
+  font-family: 'Borel', cursive;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Roboto Slab', serif; font-size: 80px;" class="text-center mb-4 mt-4">Gallery</h1>
+
+
+<section class="photo-gallery">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid mb-5">
+      <div class="col">
+        <a  href="#">
+          <img src="/IMG/Untitled design (31).png" class="img-fluid" alt="Lorem ipsum dolor sit amet">
+        </a>
+      </div>
+      <div class="col">
+        <a  href="#">
+          <img src="/IMG/Untitled design (28).png" class="img-fluid" alt="Ipsum lorem dolor sit amet">
+        </a>
+      </div>
+      <div class="col">
+        <a  href="">
+          <img src="/IMG/Untitled design (29).png" class="img-fluid" alt="Dolor lorem ipsum sit amet">
+        </a>
+      </div>
+      <div class="col">
+        <a  href="">
+          <img src="/IMG/Untitled design (34).png" class="img-fluid" alt="Sit amet lorem ipsum dolor">
+        </a>
+      </div> 
+      <div class="col">
+        <a  href="">
+          <img src="/IMG/Untitled design (32).png" class="img-fluid" alt="Aut ipsam deserunt nostrum quo">
+        </a>
+      </div>
+      <div class="col">
+        <a  href="">
+          <img src="/IMG/Untitled design (33).png" class="img-fluid" alt="Nulla ex nihil eligendi tempora">
+        </a>
+      </div>
+      <div class="col">
+        <a  href="">
+          <img src="/IMG/Untitled design (36).png" class="img-fluid" alt="Nemo perspiciatis voluptatum">
+        </a>
+      </div>
+      <div class="col">
+        <a  href="">
+          <img src="/IMG/Untitled design (35).png" class="img-fluid" alt="Accusantium consequuntur modi">
+        </a>
+      </div>
+      <div class="col"> 
+         <a  href="">
+          <img src="/IMG/Untitled design (37).png" class="img-fluid" alt="Dolore asperiores reprehenderit">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</section> 
+<!-- Section 4-->
+<!-- Menu -->
+<section id="section4">
+  <div class="container" id="menu">
+<br><br>
+<div class="transbox">
+  <div class="container">
+     
+  <h1 style="color:#F56FAC;; font-family: 'Assistant', sans-serif;
+  font-family: 'Borel', cursive;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Roboto Slab', serif; font-size: 80px;" class="text-center mb-4 mt-4">MENU</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="p-3">Bento Cakes</h2>
+   <div class="container">
+    <h4 class="p-2">
+      FLAVOUR &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; POUNDS/PRICE
+    </h4>
+    <h6 class="p-2">
+      Chocolate Fudge &nbsp;....................... &nbsp; 1.25lbs / 1300 <br> <br>
+      Vanilla &nbsp; &nbsp;.........................................&nbsp; 1.25lbs / 1300 <br> <br>
+      Coffee &nbsp; &nbsp; ........................................&nbsp; 1.25lbs / 1300 <br> <br>
+      Red velvet &nbsp; &nbsp; .................................&nbsp; 1.25lbs / 1300 <br> <br>
+      Chocolate  &nbsp; &nbsp;................................. &nbsp; 1.25lbs / 1300 <br> <br>
+
+    </h6>
+
+   </div>
+   
+      
+
+      </div>
+      <div class="col-md-6">
+        <h2 class="p-3">BROWNIES & BROWNIE CAKES</h2>
+        <div class="container">
+       <h6 class="p-2">
+            Drizzled Brownies &nbsp;....................... &nbsp; 6pcs / 700<br> <br>
+            Double Fudge &nbsp; &nbsp;.........................................&nbsp; 6pcs / 700 <br> <br>
+            Brownie Cake &nbsp; &nbsp; ........................................&nbsp; 1.25lbs / 1500 <br> <br>
+          
+      
+          </h6>
+      
+         </div>
+         <h2 class="p-3">Cupcakes</h2>
+         <div class="container">
+          <h6 class="p-2">
+            Customize Cupcakes  &nbsp;....................... &nbsp; 6pcs / 1300<br> <br>
+          </h6>
+
+         </div>
+  
+      </div>
+    <div class="container d-flex justify-content-between mb-5">
+      <p><span style="color: red;">*</span> We only cater preorders.
+        Extra Charges will be charged for all the other Customizations <br>
+      &nbsp; For more informations contact us on 03320370457 </p>
+      <a href="#Section5" type="button" class="btn rounded-pill fw-medium  text-center p-2 m-1" style="background-color:white;"> &nbsp;&nbsp; Order Now &nbsp; &nbsp;</a> 
+
+    </div>
+
     
+ 
+
+  </div>
+
+
+  </div>
+</div>
+
+  </div>
+</section>
+<!-- Section 5 -->
+<!-- Form -->
+<section id="Section5" class="container mb-2" style="background-color:#FBF1EE;">
+  <div class="container text-center">
+    <h3 class="text-center" style="color:gray; font-family: 'Assistant', sans-serif;
+    font-family: 'Borel', cursive;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Roboto Slab', serif; " > <span style="color: red;">*</span>For Ordering Please Fill In The Following Information</h3>
+    <div class="container d-flex justify-content-around row">
+      <div  class="col">
+       
+        <label class="fw-medium text-dark"for="">Name</label> <br> 
+        <input  id="name"   placeholder="Name" class="mt-2" type="text"> <br>
+        <label  class="fw-medium text-dark" for="">Email Address</label> <br> 
+        <input  id="email"  placeholder="xyz@gmail.com" class="mt-2" type="email"> <br>
+        <label class="fw-medium text-dark" for="">Contact Number </label> <br>
+         <input id="contactNO"  placeholder="03XXXXXXXXX" class="mt-2" type="text"> <br>
+        <label class="fw-medium text-dark" for="">Alternate Number</label> <br> 
+        <input  id="altNo"  placeholder="03XXXXXXXXX" class="mt-2" type="text"> <br>
+        <label class="fw-medium text-dark" for="">Delivery Address</label> <br> 
+        <input  id="addressD"  class="mt-2" type="text"> <br>
+     
+      
+      </div>
+      <div class="col" >
+      
+        <label  class="fw-medium text-dark " for="">Flavour/Pounds</label> <br> 
+        <input  id="f/p" class="mt-2" type="text"> <br>
+        <label class="fw-medium text-dark" for="">Date of Delivery</label> <br>
+         <input id="dod" class="mt-2" type="text"> <br>
+        <label class="fw-medium text-dark" for=""> Mode Of Payment </label> <br> 
+        <input id="mod" class="mt-2" type="text"> <br>
+        
+        <label class="fw-medium text-dark" for="">Customization Details</label> <br>
+           <textarea id="details" placeholder="Write all your design Details here......" cols="40" rows="5"></textarea> <br>
+      
+
+ 
+      </div>
+      
+
+    </div>
+    <button onclick="getval()" type="button" class="btn rounded-pill fw-medium  text-center p-2 m-1" style=" background-color: #45474B ; color: white; "> &nbsp;&nbsp; Order Now &nbsp; &nbsp;</button> 
+
+  </div>
 
 
 
-    <script src="/app.js"></script>
-</body>
+
+
+
+
+
+
+</section>
+<!-- Section 6 -->
+<!-- Reviews -->
+<section id="Reviews" class="container mt-3 mb-5">
+<div class="container text-center">
+<div class="row d-flex justify-content-center">
+  <div class="col-md-8">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/IMG/Screenshot 2023-11-24 225222.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/IMG/Screenshot 2023-11-25 150748.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/IMG/Screenshot 2023-11-25 150640.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img src="/IMG/Screenshot 2023-11-25 150822.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/IMG/Screenshot 2023-11-25 150923.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/IMG/Screenshot 2023-11-25 151020.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="text-center">
+    <a style="color:#45474B; font-family: 'Assistant', sans-serif;
+    font-family: 'Borel', cursive;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Roboto Slab', serif; font-size:larger; " class="text-decoration-none fw-medium" href="https://www.instagram.com/stories/highlights/18202098022264651/">100+ Reviews</a>
+
+  </div>
+
+</div>
+</div>
+
+</section>
+<!-- Section 7 -->
+<!-- Footer -->
+<section class="mt-5 " style="background-color:#F56FAC; color: white;">
+  <div class="mt-5 d-flex align-items-center  justify-content-center" > <br> <br> <br>
+ <a class="text-decoration-none text-white " href="https://wa.link/pyoq73"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;
+<a class="text-decoration-none text-white " href="https://www.facebook.com/profile.php?id=100063766336937"><i class="fa-brands fa-facebook"></i></a> &nbsp;
+<a class="text-decoration-none text-white " href="https://instagram.com/shoogaree?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a> <br> <br> <br>
+
+
+  </div>
+  <p class="text-center text-white"> © 2023 shoogaree. </p>
+
+
+
+
+</section>
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
